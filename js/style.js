@@ -45,3 +45,20 @@ function toggleText(id) {
       }, 500);  // Waktu harus sama dengan durasi transisi
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  var splideTesti = new Splide('.splide-testi', {
+      // classes:{
+      //     arrows: 'nav-arrows',
+      //     arrow: 'nav-arrow',
+      //     next: 'next-arrow',
+      //     prev: 'prev-arrow',
+      // },
+      type: 'loop',
+      perPage: 1,
+      perMove: 1,
+      gap: '2rem',
+      // pagination: false,
+      // arrows: false, // Default arrows are disabled, we'll use custom ones
+  }).mount();
+});
